@@ -1,0 +1,240 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Event Planner",
+
+  "commonSave": "Save",
+  "commonCancel": "Cancel",
+  "commonDelete": "Delete",
+  "commonAdd": "Add",
+  "commonRetry": "Retry",
+  "commonLogout": "Log out",
+  "commonLanguage": "Language",
+  "commonNotSet": "Not set",
+  "commonServerSettingsTooltip": "Server settings",
+  "commonErrorUnknown": "Something went wrong. Please try again.",
+
+  "errorInvalidCredentials": "Incorrect email or password.",
+  "errorEmailTaken": "An account with this email already exists.",
+  "errorInvalidEmail": "Please enter a valid email address.",
+  "errorInvalidPassword": "Please enter a password.",
+  "errorInvalidName": "Please enter your name.",
+  "errorInvalidTitle": "Please enter a title.",
+  "errorInvalidDate": "Please enter a valid date.",
+  "errorInvalidStatus": "Invalid status.",
+  "errorInvalidRsvpStatus": "Invalid RSVP status.",
+  "errorInvalidLabel": "Please enter a table name.",
+  "errorInvalidShape": "Invalid table shape.",
+  "errorInvalidTable": "That table no longer exists.",
+  "errorInvalidSeat": "That seat number is not valid for this table.",
+  "errorSeatTaken": "That seat is already taken.",
+  "errorPlusOneNoRoom": "There's no adjacent seat free for a plus one there.",
+  "errorInvalidBody": "Something went wrong sending your request.",
+  "errorUnauthorized": "Your session has expired. Please log in again.",
+  "errorNotFound": "Not found.",
+  "errorConnectionTimeout": "Could not reach the server. Check the address in Settings and make sure your phone is on the same Wi-Fi network as the computer.",
+  "errorConnectionError": "Could not connect to the server. Check the address in Settings.",
+
+  "authLoginTitle": "Log in",
+  "authRegisterTitle": "Register",
+  "authEmailLabel": "Email",
+  "authPasswordLabel": "Password",
+  "authNameLabel": "Name",
+  "authLoginButton": "Log in",
+  "authRegisterButton": "Register",
+  "authNoAccountPrompt": "Don't have an account? Register",
+  "authEnterEmailError": "Enter your email",
+  "authEnterPasswordError": "Enter a password",
+  "authEnterNameError": "Enter your name",
+
+  "settingsTitle": "Server settings",
+  "settingsDescription": "Enter the local network address of the Event Planner backend, for example 192.168.1.23:8080. Find your computer's IP with ipconfig (Windows) or ifconfig (Mac/Linux), and make sure your phone is on the same Wi-Fi network.",
+  "settingsAddressLabel": "Server address",
+  "settingsAddressHint": "192.168.1.23:8080",
+  "settingsTestConnection": "Test connection",
+  "settingsTestSuccess": "Connected successfully.",
+  "settingsTestServerError": "Server responded with status {status}.",
+  "@settingsTestServerError": {
+    "placeholders": { "status": { "type": "int" } }
+  },
+  "settingsTestFailure": "Could not reach the server at that address.",
+  "settingsEnterAddressFirst": "Enter the server address first.",
+  "settingsLanguageLabel": "Language",
+  "settingsLanguageSystem": "Match device",
+  "settingsLanguageEnglish": "English",
+  "settingsLanguageRussian": "Русский",
+
+  "eventsTitle": "Events",
+  "eventsTitleWithUser": "Events — {name}",
+  "@eventsTitleWithUser": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+  "eventsEmptyState": "No events yet. Tap + to create one.",
+  "eventsCreateTooltip": "Create event",
+  "eventsCreateDialogTitle": "New event",
+  "eventsNameFieldLabel": "Event name",
+  "eventsCreateButton": "Create",
+
+  "overviewNameRequired": "Enter an event name",
+  "overviewDateLabel": "Date",
+  "overviewDescriptionLabel": "Description",
+  "overviewAddressLabel": "Address",
+  "overviewLocationLabel": "Location",
+  "overviewLocationHint": "Tap the map to set the event location.",
+  "overviewSavedMessage": "Event saved.",
+
+  "navOverview": "Overview",
+  "navChecklist": "Checklist",
+  "navVendors": "Vendors",
+  "navGuests": "Guests",
+  "navSeating": "Seating",
+  "eventFallbackTitle": "Event",
+
+  "checklistStatusTodo": "To do",
+  "checklistStatusInProgress": "In progress",
+  "checklistStatusDone": "Done",
+  "checklistSummary": "{count, plural, one{{count} item · {done} done} other{{count} items · {done} done}}",
+  "@checklistSummary": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "done": { "type": "int" }
+    }
+  },
+  "checklistAddItem": "Add item",
+  "checklistAddDialogTitle": "Add checklist item",
+  "checklistTitleLabel": "Title",
+  "checklistTitleRequired": "Enter a title",
+  "checklistCategoryLabel": "Category",
+  "checklistDueDateLabel": "Due date",
+  "checklistEmptyState": "No checklist items yet — add your first one.",
+  "checklistDeleteItemTitle": "Delete item?",
+  "checklistConfirmDelete": "Delete \"{title}\" from the checklist?",
+  "@checklistConfirmDelete": {
+    "placeholders": { "title": { "type": "String" } }
+  },
+  "checklistChangeStatusTooltip": "Change status",
+  "checklistDueLabel": "Due {date}",
+  "@checklistDueLabel": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+
+  "vendorsStatusContacted": "Contacted",
+  "vendorsStatusNegotiating": "Negotiating",
+  "vendorsStatusConfirmed": "Confirmed",
+  "vendorsStatusPaid": "Paid",
+  "vendorsStatusCancelled": "Cancelled",
+  "vendorsSummary": "{count, plural, one{{count} vendor · {confirmed} confirmed} other{{count} vendors · {confirmed} confirmed}}",
+  "@vendorsSummary": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "confirmed": { "type": "int" }
+    }
+  },
+  "vendorsAddVendor": "Add vendor",
+  "vendorsAddDialogTitle": "Add vendor",
+  "vendorsNameLabel": "Name",
+  "vendorsNameRequired": "Enter a name",
+  "vendorsCategoryLabel": "Category",
+  "vendorsContactNameLabel": "Contact name",
+  "vendorsPhoneLabel": "Phone",
+  "vendorsPriceLabel": "Price",
+  "vendorsStatusLabel": "Status",
+  "vendorsEmptyState": "No vendors yet — add your first one.",
+  "vendorsDeleteVendorTitle": "Delete vendor?",
+  "vendorsConfirmDelete": "Delete \"{name}\" from vendors?",
+  "@vendorsConfirmDelete": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+  "vendorsDeleteTooltip": "Delete vendor",
+
+  "guestsRsvpPending": "Pending",
+  "guestsRsvpInvited": "Invited",
+  "guestsRsvpConfirmed": "Confirmed",
+  "guestsRsvpDeclined": "Declined",
+  "guestsSummary": "{count, plural, one{{count} guest} other{{count} guests}}",
+  "@guestsSummary": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "guestsAddGuest": "Add guest",
+  "guestsAddDialogTitle": "Add guest",
+  "guestsNameLabel": "Name",
+  "guestsNameRequired": "Enter a name",
+  "guestsPhoneLabel": "Phone",
+  "guestsEmailLabel": "Email",
+  "guestsRsvpStatusLabel": "RSVP status",
+  "guestsPlusOneLabel": "Plus one",
+  "guestsEmptyState": "No guests yet — add your first one.",
+  "guestsDeleteGuestTitle": "Delete guest?",
+  "guestsConfirmDelete": "Delete \"{name}\" from the guest list?",
+  "@guestsConfirmDelete": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+  "guestsDeleteTooltip": "Delete guest",
+  "guestsPlusOneUnseatedNotice": "{name} was unseated — their table no longer has room for a plus one.",
+  "@guestsPlusOneUnseatedNotice": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "seatingSummary": "{count, plural, one{{count} table} other{{count} tables}}, {unassigned} unassigned",
+  "@seatingSummary": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "unassigned": { "type": "int" }
+    }
+  },
+  "seatingAddTable": "Add table",
+  "seatingAddDialogTitle": "Add table",
+  "seatingTableNameLabel": "Name",
+  "seatingTableNameRequired": "Enter a name",
+  "seatingCapacityLabel": "Capacity",
+  "seatingCapacityRequired": "Enter a positive number",
+  "seatingShapeLabel": "Shape",
+  "seatingShapeRound": "Round",
+  "seatingShapeRectangle": "Rectangle",
+  "seatingSelectedBanner": "{name} selected — tap a seat.",
+  "@seatingSelectedBanner": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+  "seatingNoTablesYet": "No tables yet. Tap \"Add table\" to create one.",
+  "seatingSeatedCount": "{occupied} / {capacity} seated",
+  "@seatingSeatedCount": {
+    "placeholders": {
+      "occupied": { "type": "int" },
+      "capacity": { "type": "int" }
+    }
+  },
+  "seatingWithoutSeatNumberSuffix": " ({count} without a seat number)",
+  "@seatingWithoutSeatNumberSuffix": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "seatingDeleteTableTooltip": "Delete table",
+  "seatingDeleteTableTitle": "Delete table?",
+  "seatingConfirmDeleteTable": "Delete \"{label}\"? Any seated guests will become unassigned.",
+  "@seatingConfirmDeleteTable": {
+    "placeholders": { "label": { "type": "String" } }
+  },
+  "seatingSeatLabel": "Seat {seat}",
+  "@seatingSeatLabel": {
+    "placeholders": { "seat": { "type": "int" } }
+  },
+  "seatingSeatFree": "Free",
+  "seatingSeatReserved": "Reserved ({name}'s +1)",
+  "@seatingSeatReserved": {
+    "placeholders": { "name": { "type": "String" } }
+  },
+  "seatingOccupantDialogSubtitle": "Seated at {table}, seat {seat}.",
+  "@seatingOccupantDialogSubtitle": {
+    "placeholders": {
+      "table": { "type": "String" },
+      "seat": { "type": "int" }
+    }
+  },
+  "seatingReassign": "Reassign",
+  "seatingUnassign": "Unassign",
+  "seatingTapGuestFirst": "Tap a guest first, then tap a seat.",
+  "seatingUnassignedTitle": "Unassigned ({count})",
+  "@seatingUnassignedTitle": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "seatingEveryoneSeated": "Everyone has a table."
+}
