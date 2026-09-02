@@ -16,12 +16,14 @@ class SettingsStore extends ChangeNotifier {
   static const _baseUrlKey = 'eventplanner_server_base_url';
   static const _langKey = 'eventplanner_lang';
 
-  String baseUrl = '';
+  static const _defaultBaseUrl = 'https://event-planner-tdfi.onrender.com';
+
+  String baseUrl = _defaultBaseUrl;
   String? languageCode;
 
   Future<void> init() async {
     final prefs = await SharedPreferences.getInstance();
-    baseUrl = prefs.getString(_baseUrlKey) ?? '';
+    baseUrl = prefs.getString(_baseUrlKey) ?? _defaultBaseUrl;
     final storedLang = prefs.getString(_langKey);
     languageCode =
         supportedLanguageCodes.contains(storedLang) ? storedLang : null;
